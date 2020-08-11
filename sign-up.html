@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Tour and Travel</title>
+    <link rel="shortcut icon" href="images/download.jfif">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" > 
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <style>
+        body{
+            background-image: url(images/login.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        
+        h1{
+            text-align: center;
+            color: white;
+            font-family: aria;
+            text-decoration-line: underline;
+            text-decoration-color: darkorange;
+        }
+        
+        .icon-login{
+            display: flex;
+            justify-content: center;
+            font-size: 600%;
+            margin-top: 4%;
+            margin-bottom: 4%;
+            
+        }
+        
+        input{
+            width: 400px;
+            margin: 3%;
+            padding: 5px;
+            display: flex;
+            margin: 0 auto;
+            margin-bottom: 2%;
+            
+            
+        }
+        
+        .button{
+            font-size: 120%;
+            font-family: arial;
+            width: 200px;
+            padding-left: 70px;
+            background-color: aqua;
+            margin-bottom: 2%;
+            
+        }
+        .button:active{
+            background-color: bisque;
+        }
+        
+        p{
+            color: white;
+            text-align: center;
+        }
+        a{
+            color: deeppink;
+        }
+        
+        .btn{
+            padding: 2% 6%;
+            margin: 2%;
+            
+        }
+        
+                
+    </style>
+    
+    
+    
+    </head>
+    
+    
+    
+   
+    <body>
+        
+         <a href="index.html" style="color: black"><button class="btn btn-success">Home</button></a>
+        
+        <h1> Sign Up</h1>
+        <div class="icon-login glyphicon glyphicon-log-in "></div>
+        
+        <div class="form">
+            <form>
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="email" id="email" name="Email" placeholder="email"><br>
+                
+                <input type="email" id="cemail" name="cemail" placeholder="Confirm Email" onchange="func()"><br>
+                
+                
+                
+                <input type="number" name="mobile" placeholder="Mobile Number"><br>
+                <input type="password" name="password" placeholder="Create password">
+                
+                <input class="button" type="submit" value="submit" name="submit" onclick="return func()">
+                
+            </form>
+            
+            
+        
+        </div>
+        
+        <div>
+            <p>New User? <a href="sign-up.html">Click here</a></p>
+            
+        </div>
+        
+        
+        
+        
+        
+        
+        <script>
+            function func()
+            {
+               if(document.getElementById("email").value != document.getElementById("cemail").value)
+                   {
+                       alert("Email not matching");
+                       return false;
+                   }
+                
+            }
+        
+        </script>  
+        
+    </body>
+</html>
